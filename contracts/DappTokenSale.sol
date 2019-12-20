@@ -50,6 +50,5 @@ contract DappTokenSale {
         require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))));
 
         admin.transfer(address(this).balance);
-        //selfdestruct(admin); //Destroy the contract and reset all values.
     }
 }
